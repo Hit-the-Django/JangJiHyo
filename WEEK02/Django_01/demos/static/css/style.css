@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+* {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+body, h1, h2{
+    margin: 8px;
+    padding:0px;
+}
+
+body{
+    min-width: fit-content;
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2{
+    background-color: rgb(202, 229, 240);
+    font-size: 20px;
+    color: #282828;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(245, 245, 237);
+}
+
+.mainbox{
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    background-color: rgb(243, 239, 239);
+}
+
+.title-box{
+    text-align: right;
+    margin-bottom: 20px;
+}
