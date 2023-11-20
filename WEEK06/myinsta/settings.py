@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'posts',
     'users',
     'accounts',
+    'rest_framework',
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -133,3 +134,4 @@ MEDIA_ROOT=BASE_DIR /'myinsta'/'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
