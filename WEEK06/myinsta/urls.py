@@ -8,15 +8,17 @@ from posts.views import *
 from posts.views import url_view, url_parameter_view, function_view, index
 from posts.views import class_view
 
-router=routers.DefaultRouter()
-router.register('posts',PostModelViewSet)
+#router=routers.DefaultRouter()
+#router.register('posts',PostModelViewSet)
 
 urlpatterns = [
 
-#    path('', include(router.urls)),
+    #path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('', include('posts.urls')),
     
+    path('posts/', PostListCreateView.as_view(), name='post-list-create'),
+    path('posts/<int:pk>/', PostRetrieveUpdateView.as_view(), name='post-detail'),
     #path('post/<int:id>/', post_detail_view, name='post-detail'),
     #path('post/<int:id>/update/', post_update_view, name='post-update'),
     #path('post/<int:id>/delete/', post_delete_view, name='post-delete'),
